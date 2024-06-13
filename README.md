@@ -1,0 +1,2 @@
+# TemarioPE
+Probabilidad y Estadística 
