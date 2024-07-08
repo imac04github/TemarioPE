@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <meta charset="UTF-8">
     <title>Temario</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <style>
         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0
             background-color: #E6E6FA;
             /* Gris claro */
         }
 
         h1 {
             text-align: center;
-            color: purple;
+            color: peru;
         }
 
         h2 {
-            color: purple;
-            text-align: left;
+            color: palevioletred;
+            text-align: center;
         }
 
         h3 {
-            color: purple;
+            color: forestgreen;
             text-align: left;
         }
 
@@ -50,9 +57,11 @@
 <body>
     <header>
         <h1>TEMARIO PROBABILIDAD Y ESTADÍSTICA</h1>
-        <h2>Alumna: Leilany Aislinn Sanchez Reyes</h2>
+        <h1>Alumna: Leilany Aislinn Sanchez Reyes</h1>
+        <h1>TemarioPE</h1>
+        <h1>Recursamiento 2024</h1>
     </header>
-    <main>
+    <main></main>
         <table>
             <tr>
                 <th>
@@ -66,6 +75,7 @@
                 </th>
             </tr>
             <tr>
+            
                 <td>
                     <h2>1</h2>
                 </td>
@@ -74,6 +84,7 @@
                 </td>
                 <td>
                     <ol>
+                        <h2><strong>1. Fundamentos de la probabilidad</strong></h2>
                         <li>
                             <h3>1. Estadística Descriptiva:</h3>
                             <p>Conceptos básicos de estadística: Definición, Teoría de decisión, Población, Muestra
@@ -158,27 +169,25 @@
                     <H2>2</H2>
                 </td>
                 <td>
-                    <H2>Fundamentos de la Teoria de Probabilidad.</H2>
+                    <H2>Fundamentos de la  Teoría de Probabilidad.</H2>
                 </td>
                 <td>
                     <ol>
-                        <h2>2. Fundamentos de la teoria de la probabilidad.</h2>
+                        <h2><strong> Fundamentos de la  Teoría  de la probabilidad.</strong></h2>
 
                         <li>
-                            <h3>2.1 Tecnicas de Conteo.</h3>
+                            <h3>2.1 Técnicas de Conteo.</h3>
                             <p>
                                 Tecnica de conteo:
-                                Formulas y procesos matematicos que nos permiten determinar el total de
-                                resultados posibles en un evento o experimento.</p>
+                                Fórmulas y procesos matemáticos que nos permiten determinar el total de resultados posibles 
+                                en un evento o experimento.</p>
 
                             <p>Principio aditivo:
-                                Principio aditivo: Tambien conocido como el principio de la suma nos dice
-                                que si tienes dos conjuntos de eventos
-                                disjuntos (No tienen elemento en comun), la cantidad total de manera en la que puede ocurrir
-                                uno u otro evento es la suma de individual de cada evento.
-                                Matematicamente si un evento "A" puede ocurrir de "M" maneras y un evento "N" puede
-                                ocurrir de n maneras "A Y B " son mutamente excluyentes entonces la cantidad de manera en
-                                la que "A Y B " pueden ocurir es:
+                                También conocido como el principio de la suma, nos dice que si tienes dos conjuntos de eventos disjuntos
+                                 (no tienen elementos en común), la cantidad total de maneras en las que puede ocurrir uno u otro evento es 
+                                 la suma individual de cada evento. Matemáticamente, si un evento "A" puede ocurrir de "m" maneras y un evento "B" 
+                                 puede ocurrir de "n" maneras, y son mutuamente excluyentes, entonces la cantidad de maneras en las que "A o B" pueden ocurrir es:
+
                                 (m + n)
                             </p>
                             <p>
@@ -388,7 +397,7 @@
                 </td>
                 <td>
                     <ol>
-                        <h2>3. Variables Aleatorias</h2>
+                        <h2><strong>Variables Aleatorias</strong></h2>
 
                         <li>
                             <h3>Variables aleatorias discretas:</h3>
@@ -475,88 +484,155 @@
                     </ol>
                 </td>
             </tr>
-            <td>
-                <h2>4</h2>
-            </td>
-            <td>
-                <h2>Distribuciones de Probabilidad.</h2>
-            </td>
-            <td>
-                <ol>
-                    <h2>4. Distribucion de probabilidad</h2>
+            <tr>
+                <td>
+                    <h2>4</h2>
+                </td>
+                <td>
+                    <h2>Distribuciones de Probabilidad.</h2>
+                </td>
+                <td>
+                    <ol>
+                        <h2><strong>4. Distribucion de probabilidad.</strong> </h2>
+    
+                        <li>
+                            <h3>Distribucion binomial:</h3>
+                            <p>
+                                La distribucion binomial describe el numero de exitos en una secuencia de n
+                                experimentos independientes, cada uno con una probabilidad de exito
+                                p.
+                            <p>La formula de la funcion de probabilidad de la distribucion binomial es:</p>
+                            <p>P(X = k) = C(n, k) * p^k * (1-p)^(n-k)</p>
+                            </p>
+                        <li>
+                            <h3>Distribucion hipergeometrica:</h3>
+                            <p> La distribucion hipergeometrica describe la probabilidad de obtener k
+                                exitos en n extracciones sin reemplazo de una poblacion finita que contiene
+                                N elementos, de los cuales K son exitos. </p>
+                            <p>La formula de la funcion de probabilidad de la distribucion hipergeometrica es:</p>
+                            <p>P(X = k) = (C(K, k) * C(N-K, n-k)) / C(N, n)</p>
+                        </li>
+                        <li>
+                            <h3>Distribucion de Poisson:</h3>
+                            <p>
+                                La distribucion de Poisson describe el numero de eventos que ocurren en un intervalo de
+                                tiempo o
+                                espacio fijo cuando los eventos ocurren con una tasa constante y
+                                de manera independiente.
+                            <p>La formula de la funcion de probabilidad de la distribucion de Poisson es:
+                            <p>P(X = k) = (λ^k * e^(-λ)) / k!</p>
+    
+                            </p>
+    
+                            </p>
+                        <li>
+                            <h3>Distribucion normal:</h3>
+                            <p>La distribucion normal, tambien conocida como distribucion de Gauss, es una distribucion
+                                continua
+                                que describe datos que tienden a agruparse alrededor de la media.
+                            <p>La funcion de densidad de probabilidad de la distribución normal es:</p>
+                            <p>f(x) = (1 / √(2πσ^2)) * e^(-(x-μ)^2 / (2σ^2))</p>
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Distribucion T-student:</h3>
+                            <p>La distribucion T de Student es una distribucion continua que se utiliza principalmente para
+                                estimar la media de una poblacion normalmente distribuida cuando el tamaño de la muestra
+                                es pequeño y la desviacion estandar de la poblacion es desconocida.
+                                Su forma es similar a la distribucion normal, pero con colas mas gruesas.</p>
+                        </li>
+                        <li>
+                            <h3>Distribucion Chi cuadrada:</h3>
+                            <p>La distribución Chi cuadrada es una distribucion continua que describe la suma de los
+                                cuadrados
+                                de k
+                                variables aleatorias independientes y normalizadas. Es comunmente utilizada en pruebas de
+                                hipotesis y en el analisis de varianza.
+                            <p>La funcion de densidad de probabilidad de la distribucion Chi cuadrada es:</p>
+                            <p>f(x; k) = (x^(k/2 - 1) * e^(-x/2)) / (2^(k/2) * Γ(k/2))</p>
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Distribucion F:</h3>
+                            <p>La distribucion F es una distribucion continua que surge en la comparacion de dos varianzas y
+                                es
+                                utilizada principalmente en el analisis de varianza (ANOVA). Se define como la razon de dos
+                                variables aleatorias Chi cuadrada independientes,
+                                cada una dividida por sus respectivos grados de libertad.
+                            <p>La funcion de densidad de probabilidad de la distribucion F es:</p>
+                            <p>f(x; d1, d2) = ((d1/d2)^(d1/2) * x^((d1/2) - 1)) / (B(d1/2, d2/2) * (1 + (d1/d2) * x)^((d1 +
+                                d2)/2))</p>
+    
+                            </p>
+                        </li>
+                    </ol>
+                </td> 
+            </tr>
+            <tr>
+                <td>
+                    <h2>5</h2>
+                </td>
+                <td>
+                    <h2>Regresión lineal.</h2>
+                </td>
+                <td>
+                    <ol>
+                        <h2><strong>5. Regresión lineal.</strong> </h2>
+    
+                        <li>
+                            <h3>Regresión y correlación.</h3>
+                                <p>
+                                    Regresión: La regresión es una técnica estadística que busca modelar la relación entre una variable dependiente (Y) y una o más variables independientes (X).
+                                     El objetivo principal es encontrar una función que describa cómo cambia la variable dependiente cuando cambian las variables independientes.
+                                </p>
+                                <p>
+                                    Correlación: La correlación es una medida estadística que indica la fuerza y la dirección de la relación lineal entre dos variables cuantitativas. 
+                                    Se utiliza para determinar si y cómo cambian juntas dos variables. El coeficiente de correlación (por ejemplo, el coeficiente de correlación de Pearson) varía entre -1 y 1: un valor cercano a 1 indica una correlación positiva perfecta (las variables aumentan juntas), un valor cercano a -1 indica una correlación negativa perfecta (una variable aumenta mientras la otra disminuye), 
+                                    y un valor cercano a 0 indica que no hay relación lineal entre las variables.
+                                </p>  
+                        </li>
+                        <li>
+                            <h3>Diagrama de dispersión:</h3>
+                            <p>El diagrama de dispersión es una representación gráfica de pares de datos para mostrar la relación entre dos variables.
+                                Cada punto en el gráfico representa un par de valores.
+                           </p>
+                        </li>
+                        <li>
+                            <h3>Regresión lineal simple.:</h3>
+                            <p>
+                                La regresión lineal simple es un modelo matemático que busca describir la relación lineal entre una variable dependiente (Y) y una variable independiente (X).
+                                <div class="latex-formula">
+                                    \( Y = \beta_0 + \beta_1 X + \epsilon \)
+                                </div>
+                                
+            
+                            </p>
+                        <li>
+                            <h3>Correlación.:</h3>
+                            <p>La correlación es una medida estadística que describe la relación y la dirección (positiva o negativa) entre dos variables.</p>
+                        </li>
+                        <li>
+                            <h3>Determinación y análisis de los coeficientes
+                                de correlación y de determinación.:</h3>
+                            <p>La determinación y análisis de los coeficientes de correlación y de determinación evalúan la fuerza y dirección de la relación entre variables y cuánta varianza es explicada por el modelo de regresión.</p>
+                            <div class="latex-formula">
+                                \( R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST} \)
+                            </div>                            
+                        </li>
+                        <li>
+                            <h3>Distribución normal bidimensional:</h3>
+                            <p> La distribución normal bidimensional describe la distribución conjunta de dos variables continuas que siguen una distribución normal.
+                                Formula: 
+                                Se suele utilizar software estadístico para calcular y visualizar esta distribución.
 
-                    <li>
-                        <h3>Distribucion binomial:</h3>
-                        <p>
-                            La distribucion binomial describe el numero de exitos en una secuencia de n
-                            experimentos independientes, cada uno con una probabilidad de exito
-                            p.
-                        <p>La formula de la funcion de probabilidad de la distribucion binomial es:</p>
-                        <p>P(X = k) = C(n, k) * p^k * (1-p)^(n-k)</p>
-                        </p>
-                    <li>
-                        <h3>Distribucion hipergeometrica:</h3>
-                        <p> La distribucion hipergeometrica describe la probabilidad de obtener k
-                            exitos en n extracciones sin reemplazo de una poblacion finita que contiene
-                            N elementos, de los cuales K son exitos. </p>
-                        <p>La formula de la funcion de probabilidad de la distribucion hipergeometrica es:</p>
-                        <p>P(X = k) = (C(K, k) * C(N-K, n-k)) / C(N, n)</p>
-                    </li>
-                    <li>
-                        <h3>Distribucion de Poisson:</h3>
-                        <p>
-                            La distribucion de Poisson describe el numero de eventos que ocurren en un intervalo de
-                            tiempo o
-                            espacio fijo cuando los eventos ocurren con una tasa constante y
-                            de manera independiente.
-                        <p>La formula de la funcion de probabilidad de la distribucion de Poisson es:
-                        <p>P(X = k) = (λ^k * e^(-λ)) / k!</p>
-
-                        </p>
-
-                        </p>
-                    <li>
-                        <h3>Distribucion normal:</h3>
-                        <p>La distribucion normal, tambien conocida como distribucion de Gauss, es una distribucion
-                            continua
-                            que describe datos que tienden a agruparse alrededor de la media.
-                        <p>La funcion de densidad de probabilidad de la distribución normal es:</p>
-                        <p>f(x) = (1 / √(2πσ^2)) * e^(-(x-μ)^2 / (2σ^2))</p>
-                        </p>
-                    </li>
-                    <li>
-                        <h3>Distribucion T-student:</h3>
-                        <p>La distribucion T de Student es una distribucion continua que se utiliza principalmente para
-                            estimar la media de una poblacion normalmente distribuida cuando el tamaño de la muestra
-                            es pequeño y la desviacion estandar de la poblacion es desconocida.
-                            Su forma es similar a la distribucion normal, pero con colas mas gruesas.</p>
-                    </li>
-                    <li>
-                        <h3>Distribucion Chi cuadrada:</h3>
-                        <p>La distribución Chi cuadrada es una distribucion continua que describe la suma de los
-                            cuadrados
-                            de k
-                            variables aleatorias independientes y normalizadas. Es comunmente utilizada en pruebas de
-                            hipotesis y en el analisis de varianza.
-                        <p>La funcion de densidad de probabilidad de la distribucion Chi cuadrada es:</p>
-                        <p>f(x; k) = (x^(k/2 - 1) * e^(-x/2)) / (2^(k/2) * Γ(k/2))</p>
-                        </p>
-                    </li>
-                    <li>
-                        <h3>Distribucion F:</h3>
-                        <p>La distribucion F es una distribucion continua que surge en la comparacion de dos varianzas y
-                            es
-                            utilizada principalmente en el analisis de varianza (ANOVA). Se define como la razon de dos
-                            variables aleatorias Chi cuadrada independientes,
-                            cada una dividida por sus respectivos grados de libertad.
-                        <p>La funcion de densidad de probabilidad de la distribucion F es:</p>
-                        <p>f(x; d1, d2) = ((d1/d2)^(d1/2) * x^((d1/2) - 1)) / (B(d1/2, d2/2) * (1 + (d1/d2) * x)^((d1 +
-                            d2)/2))</p>
-
-                        </p>
-                        </p>
-                    </li>
+                         
+                            </p>
+                        </li>    
+                    </ol>
+                </td> 
+            </tr> 
         </table>
+    </main>    
 </body>
 
 </html>
